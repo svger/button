@@ -1,0 +1,20 @@
+{
+  "name": "@cefc-ui/button",
+  "version": "1.0.0",
+  "description": "CEFC-UI Button",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@10.199.101.162:CEFC-UI/Button.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-css-modules": "^3.7.10",
+    "classnames": "^2.2.5"
+  }
+}
