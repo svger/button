@@ -1,9 +1,9 @@
 'use strict';
 
 import React, { Component, PropTypes } from 'react';
-import CSSModule from 'react-css-module';
+import CSSModule from 'react-css-modules';
 import classnames from 'classnames';
-import styles from './style/Button.less';
+import styles from './style/button.less';
 
 class Button extends Component {
 

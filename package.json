@@ -1,10 +1,11 @@
 {
   "name": "@cefc-ui/button",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "CEFC-UI Button",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./node_modules/@cefc-utils/tools/bin/tools.js run build",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,15 @@
     "react": "^0.14.7",
     "react-css-modules": "^3.7.10",
     "classnames": "^2.2.5"
+  },
+  "devDependencies": {
+    "@cefc-utils/tools": "1.0.6",
+    "babel-cli": "^6.6.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-runtime": "^6.6.1"
   }
 }
