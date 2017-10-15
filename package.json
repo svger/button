@@ -4,7 +4,7 @@
   "description": "CEFC-UI Button",
   "main": "build/index.js",
   "scripts": {
-    "build": "node ./node_modules/@cefc-utils/tools/bin/tools.js run build",
+    "build": "tools run build",
     "prepublish": "npm run build"
   },
   "repository": {
