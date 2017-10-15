@@ -18,9 +18,9 @@ var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _button = require('./style/button.less');
+var _index = require('./style/index.less');
 
-var _button2 = _interopRequireDefault(_button);
+var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -154,6 +154,6 @@ Button.propTypes = {
   className: _react.PropTypes.string //外部传入的样式
 };
 
-exports.default = (0, _reactCssModules2.default)(Button, _button2.default, {
+exports.default = (0, _reactCssModules2.default)(Button, _index2.default, {
   allowMultiple: true
 });

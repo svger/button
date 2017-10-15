@@ -3,7 +3,7 @@
 import React, { Component, PropTypes } from 'react';
 import CSSModule from 'react-css-modules';
 import classnames from 'classnames';
-import styles from './style/button.less';
+import styles from './style/index.less';
 
 class Button extends Component {
 
