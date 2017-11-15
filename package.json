@@ -2,7 +2,7 @@
   "name": "@cefc-ui/button",
   "version": "1.0.15",
   "description": "CEFC-UI Button",
-  "main": "build/Button.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "node_modules/.bin/tools run build",
     "server": "node_modules/.bin/tools run server",
