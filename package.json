@@ -1,6 +1,6 @@
 {
   "name": "@cefc-ui/button",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "CEFC-UI Button",
   "main": "build/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cefc-utils/tools": "^1.0.20"
+    "@cefc-utils/tools": "^1.0.22"
   },
   "devDependencies": {
     "react-dom": "^0.14.7",
