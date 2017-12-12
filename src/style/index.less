@@ -1,148 +1,47 @@
-@btn-margin:                          .15rem;
-@btn-height:                          .4rem;
-@btn-bg-color-blue:                   #3787E1;
-@btn-bg-color-orange:                 #EA5A38;
-@btn-bg-color-red:                    #f01e28;
-@btn-bg-color-grey:                   #3a424b;
-@btn-bg-color-light-grey:             #e1e1e1;
-@font-color-orange:                   #ea5a38;
-@font-color-blue:                     #0074E1;
-@font-color-orange-dark:              #EA5A38;
-@font-color-lighter-blue:             #4f97f2;
-@font-color-light-black:              #565656;
-@font-color-grey:                     #D0D0D0;
-@font-size-medium:                    .14rem;
-@font-color-white:                    #fff;
-@bg-default:                          #f01e28;
-@bg-mask:                             #ec9ea2;
+@import '../../node_modules/cefc-ui-style/src/mixins/utils.less';
+@import '../../@{theme}';
 
-//Button组件样式 -- start
-.btn-wrapper {
+@bg-mask:                             #ec9ea2;
+@btnPrefixCls: cefc-button;
+
+//Buttons
+@btn-height: 44px;
+@btn-default-bg: #108ee9;
+@btn-default-color: #108ee9;
+@btn-default-font-color: #fff;
+@btn-border-radius-base: 5px;
+@btn-gap: 15px;
+
+.@{btnPrefixCls} {
   box-sizing: border-box;
-  display: inline-block;
   position: relative;
   height: @btn-height;
-  line-height: inherit;
 
-  button {
+  > span {
+    margin-left: .05rem;
+  }
+
+  &-full {
     width: 100%;
   }
 
-  &.full {
+  &-block {
     width: 100%;
   }
 
-  &.fixed-bottom {
-    position: fixed;
-    bottom: 0;
-  }
-
-  .default {
-    display: inline-block;
-    font-size: @font-size-medium;
-    height: inherit;
-    line-height: inherit;
-    background-color: @bg-default;
-    color: @font-color-white;
-    text-align: center;
-    border: 0;
-  }
-
-  .radius {
-    border-radius: .05rem;
-  }
-
-  .bg-dark_blue {
-    background-color: rgba(55, 135, 225, 0.1);
-    color: @btn-bg-color-blue;
-    border: .01rem solid @btn-bg-color-blue;
-  }
-
-  .bg-blue,
-  .clicked-blue {
-    background-color: @font-color-blue;
-    border: .01rem solid @font-color-blue;
-    color: @font-color-white;
-  }
-
-  .bg-white {
-    background-color: #ffffff;
-    border: .01rem solid #565656;
-  }
-
-  .bg-dark_orange {
-    background-color: rgba(234, 90, 56, 0.1);
-    color: @font-color-orange-dark;
-    border: .01rem solid @btn-bg-color-orange;
-  }
-
-  .bg-lightBlue,
-  .clicked-lightBlue{
-    background-color: @font-color-lighter-blue;
-    border: .01rem solid @font-color-lighter-blue;
-    color: @font-color-white;
-  }
-
-  .bg-transparent {
-    background:transparent;
-    border: none;
-    color: #167efb;
-  }
-
-  .bg-dark_red {
-    background-color: #ffffff;
-    color: @font-color-orange;
-    border: .01rem solid @btn-bg-color-red;
-  }
-
-  .bg-red,
-  .clicked-red {
-    color: @font-color-white;
-    background-color: @btn-bg-color-red;
-    border: .01rem solid @btn-bg-color-red;
-  }
-
-  .bg-orange,
-  .clicked-orange {
-    color: @font-color-white;
-    background-color: @btn-bg-color-orange;
-    border: .01rem solid @btn-bg-color-orange;
-  }
-
-  .bg-grey {
-    background-color: @btn-bg-color-grey;
-  }
-
-  .bg-lightGrey,
-  .clicked-lightGrey{
-    background-color: @btn-bg-color-light-grey;
-  }
-
-  .bg-white {
-    background-color: @font-color-white;
-    color: @font-color-light-black;
-    border: 1px solid @font-color-light-black;
-  }
-
-  .bg-entrust {
-    background-color: @font-color-white;
-    color: @font-color-light-black;
-    text-align: left;
-    padding-left: .15rem;
-  }
-
-  .block {
-    width: 100%;
-  }
-
-  .disabled {
+  &-disabled {
     position: relative;
     z-index: 3;
     bottom: 0;
     opacity: .2;
   }
 
-  .mask-default {
+  &-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+  }
+
+  &-mask-default {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -150,82 +49,48 @@
     bottom: 0;
     background-color: @bg-mask;
   }
-}
 
-.btn-wrapper-block {
-  width: 100%;
-  margin: @btn-margin 0;
-  padding-left: @btn-margin;
-  padding-right: @btn-margin;
-}
-//Button组件样式 -- end
+  &-default {
+    font-size: @font-size-base;
+    background-color: @btn-default-bg;
+    color: @btn-default-font-color;
+    text-align: center;
+    border: 0;
+    border-radius: 0;
+  }
 
-//ButtonToolBar组件样式 -- start
-.sharing_2 {
+  &-radius {
+    border-radius: @btn-border-radius-base;
+  }
 
-  .btn-wrapper {
-    width: 50%;
-    box-sizing: border-box;
-    margin: @btn-margin 0;
+  &-bg-dark_blue {
+    background-color: rgba(55, 135, 225, 0.1);
+    color: @btn-default-color;
+    border: .01rem solid @btn-default-color;
+  }
 
-    button {
-      width: 100%;
-    }
+  &-bg-blue,
+  &-clicked-blue {
+    background-color: @btn-default-bg;
+    border: .01rem solid @btn-default-color;
+    color: @btn-default-font-color;
+  }
+
+  &-bg-white {
+    background-color: #fff;
+    border: .01rem solid #565656;
+  }
+
+  &-btn-wrapper-block {
+    width: 100%;
+    margin: @btn-gap 0;
+    padding-left: @btn-gap;
+    padding-right: @btn-gap;
+  }
+
+  &-group-vertical {
+    display: flex;
+    flex-direction: column;
   }
 }
 
-.sharing_2 .btn-wrapper:first-child {
-  padding-left: @btn-margin;
-  padding-right: .04rem;
-}
-
-.sharing_2 .btn-wrapper:last-child {
-  padding-left: .04rem;
-  padding-right: @btn-margin;
-}
-
-.sharing_3 {
-
-  .btn-wrapper {
-    width: 33.33%;
-    box-sizing: border-box;
-    margin: @btn-margin 0;
-
-    &:nth-child(1) {
-      padding-right: .03rem;
-    }
-
-    &:nth-child(2) {
-      padding: 0 .03rem;
-    }
-
-    &:nth-child(3) {
-      padding-left: .03rem;
-    }
-
-    button {
-      width: 100%;
-    }
-  }
-}
-
-.between {
-  display: flex;
-  justify-content: space-between;
-
-  .btn-wrapper {
-    width: 50%;
-    box-sizing: border-box;
-
-    button {
-      width: 100%;
-    }
-  }
-}
-//ButtonToolBar组件样式 -- end
-
-//weChatMain组件
-.weChatMain_btn {
-  border: none;
-  border-left: solid 1px @font-color-grey;
-}

@@ -1,26 +1,28 @@
 {
-  "name": "@cefc-ui/button",
-  "version": "1.0.16",
-  "description": "CEFC-UI Button",
-  "main": "build/index.js",
+  "name": "cefc-ui-button",
+  "version": "0.0.2",
+  "description": "CEFC-UI-BUTTON",
+  "main": "src/index.js",
   "scripts": {
     "build": "node_modules/.bin/tools run build",
     "server": "node_modules/.bin/tools run server",
     "lint": "node_modules/.bin/tools run lint"
   },
   "repository": {
-    "type": "git",
-    "url": "git@10.199.101.162:CEFC-UI/Button.git"
+    "type": "git"
   },
-  "author": "",
+  "author": "Carlton",
   "license": "ISC",
   "dependencies": {
-    "@cefc-utils/tools": "^1.0.22"
+    "cefc-ui-icon": "0.0.6",
+    "cefc-ui-style": "~0.0.1",
+    "classnames": "~2.2.5",
+    "prop-types": "~15.6.0",
+    "react": "~16.1.1",
+    "react-dom": "~16.1.1"
   },
   "devDependencies": {
-    "react-dom": "^0.14.7",
-    "react-css-modules": "^3.7.10",
-    "react": "^0.14.7",
-    "classnames": "^2.2.5"
-  }
+    "cefc-tools": "~0.0.4"
+  },
+  "theme": "node_modules/cefc-ui-style/src/themes/default.less"
 }
