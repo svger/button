@@ -30,19 +30,18 @@ class ButtonGroup extends Component {
     const btnLen = children.length;
     const styleObj = {};
 
-    justify && (styleObj.width = `${100/btnLen}%`);
+    justify && (styleObj.width = `${100 / btnLen}%`);
 
     return styleObj;
   }
 
   render() {
     return (
-        <div className={this.getWrapperCls()}>
-          {this.props.children.map((node, index) => {
-
-            return React.cloneElement(node, { style: this.getBtnStyle(), key: `btnGroup-${index}` });
-          })}
-        </div>
+      <div className={this.getWrapperCls()}>
+        {this.props.children.map((node, index) => {
+          return React.cloneElement(node, { style: this.getBtnStyle(), key: `btnGroup-${index}` });
+        })}
+      </div>
     )
   }
 }

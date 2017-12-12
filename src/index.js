@@ -16,7 +16,7 @@ class Button extends Component {
     size: PropTypes.string,                           //按钮大小 'lg'
     color: PropTypes.string,                          //按钮颜色(样式中同时定义字体以及背景颜色)
     full: PropTypes.bool,                             //是否宽度百分百
-    radius: PropTypes.bool        ,                           //是否是圆角样式
+    radius: PropTypes.bool,                           //是否是圆角样式
     disabled: PropTypes.bool,                         //是否禁用
     block: PropTypes.bool,                            //是否独占一行
     height: PropTypes.string,                         //重新定义高度
@@ -24,7 +24,8 @@ class Button extends Component {
     clickedColor: PropTypes.string,                   //点击后的button颜色
     onClick: PropTypes.func,                          //点击触发事件,
     maskColor: PropTypes.string,                      //button的遮罩层颜色,
-    className: PropTypes.string                       //外部传入的样式
+    className: PropTypes.string,                      //外部传入的样式
+    style: PropTypes.string                           //外部传入的style
   }
 
   static defaultProps = {
@@ -81,9 +82,9 @@ class Button extends Component {
     const { disabled, text } = this.props;
 
     return (
-        <button style={this.getStyleObj()} className={this.getBtnClass()} disabled={disabled} onClick={this.handleClick}>
-          {this.props.children || text}
-        </button>
+      <button style={this.getStyleObj()} className={this.getBtnClass()} disabled={disabled} onClick={this.handleClick}>
+        {this.props.children || text}
+      </button>
     )
   }
 }

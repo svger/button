@@ -262,6 +262,7 @@
     "react/self-closing-comp": 0,
     //不允许使用refs
     "react/no-string-refs": 0,
-    "react/require-default-props": 0
+    "react/require-default-props": 0,
+    "react/no-array-index-key": 0
   }
 }
