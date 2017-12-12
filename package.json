@@ -1,6 +1,6 @@
 {
   "name": "cefc-ui-button",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CEFC-UI-BUTTON",
   "main": "src/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "author": "Carlton",
   "license": "ISC",
   "dependencies": {
-    "cefc-ui-icon": "0.0.6",
+    "cefc-ui-icon": "^0.1.0",
     "cefc-ui-style": "~0.0.1",
     "classnames": "~2.2.5",
     "prop-types": "~15.6.0",
@@ -22,7 +22,7 @@
     "react-dom": "~16.1.1"
   },
   "devDependencies": {
-    "cefc-tools": "~0.0.4"
+    "cefc-tools": "^0.0.5"
   },
   "theme": "node_modules/cefc-ui-style/src/themes/default.less"
 }

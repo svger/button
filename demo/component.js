@@ -14,7 +14,7 @@ class App extends React.Component {
            <Button disabled >Disabled</Button>
            <Button radius width="100">Width 100</Button>
            <Button radius >
-             <Icon type="plus-circle-o" />
+             <Icon type="icon-delete" />
              <span>Plus</span>
            </Button>
          </div>
