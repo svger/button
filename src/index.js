@@ -13,9 +13,7 @@ class Button extends Component {
     children: PropTypes.node,
     text: PropTypes.string,                           //button中的文字
     fixed: PropTypes.string,                          //fix定位的位置
-    size: PropTypes.string,                           //按钮大小 'lg'
     color: PropTypes.string,                          //按钮颜色(样式中同时定义字体以及背景颜色)
-    full: PropTypes.bool,                             //是否宽度百分百
     radius: PropTypes.bool,                           //是否是圆角样式
     disabled: PropTypes.bool,                         //是否禁用
     block: PropTypes.bool,                            //是否独占一行
