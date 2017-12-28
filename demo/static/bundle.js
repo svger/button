@@ -5844,7 +5844,7 @@ var App = function (_React$Component) {
           { className: 'btn-single' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1__src_index__["a" /* default */],
-            { radius: true },
+            { radius: true, color: 'white' },
             'Radius'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -6047,9 +6047,7 @@ Button.propTypes = {
   children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.node,
   text: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, //button中的文字
   fixed: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, //fix定位的位置
-  size: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, //按钮大小 'lg'
   color: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, //按钮颜色(样式中同时定义字体以及背景颜色)
-  full: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool, //是否宽度百分百
   radius: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool, //是否是圆角样式
   disabled: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool, //是否禁用
   block: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool, //是否独占一行
@@ -6058,7 +6056,8 @@ Button.propTypes = {
   clickedColor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, //点击后的button颜色
   onClick: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func, //点击触发事件,
   maskColor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, //button的遮罩层颜色,
-  className: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string //外部传入的样式
+  className: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, //外部传入的样式
+  style: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string //外部传入的style
 };
 Button.defaultProps = {
   prefix: defaultPrefix
@@ -6666,7 +6665,6 @@ var ButtonGroup = function (_Component) {
         'div',
         { className: this.getWrapperCls() },
         this.props.children.map(function (node, index) {
-
           return __WEBPACK_IMPORTED_MODULE_0_react___default.a.cloneElement(node, { style: _this2.getBtnStyle(), key: 'btnGroup-' + index });
         })
       );
@@ -6698,7 +6696,7 @@ exports = module.exports = __webpack_require__(12)();
 
 
 // module
-exports.push([module.i, ".cefc-button{box-sizing:border-box;position:relative;height:44px}.cefc-button>span{margin-left:.05rem}.cefc-button-block,.cefc-button-full{width:100%}.cefc-button-disabled{position:relative;z-index:3;bottom:0;opacity:.2}.cefc-button-fixed-bottom{position:fixed;bottom:0}.cefc-button-mask-default{width:100%;height:100%;position:absolute;z-index:2;bottom:0;background-color:#ec9ea2}.cefc-button-default{font-size:.14rem;background-color:#108ee9;color:#fff;text-align:center;border:0;border-radius:0}.cefc-button-radius{border-radius:5px}.cefc-button-bg-dark_blue{background-color:rgba(55,135,225,.1);color:#108ee9;border:.01rem solid #108ee9}.cefc-button-bg-blue,.cefc-button-clicked-blue{background-color:#108ee9;border:.01rem solid #108ee9;color:#fff}.cefc-button-bg-white{background-color:#fff;border:.01rem solid #565656}.cefc-button-btn-wrapper-block{width:100%;margin:15px 0;padding-left:15px;padding-right:15px}.cefc-button-group-vertical{display:flex;flex-direction:column}", ""]);
+exports.push([module.i, ".cefc-button{box-sizing:border-box;position:relative;height:44px}.cefc-button>span{margin-left:.05rem}.cefc-button-block,.cefc-button-full{width:100%}.cefc-button-disabled{position:relative;z-index:3;bottom:0;opacity:.2}.cefc-button-fixed-bottom{position:fixed;bottom:0}.cefc-button-mask-default{width:100%;height:100%;position:absolute;z-index:2;bottom:0;background-color:#ec9ea2}.cefc-button-default{font-size:.14rem;background-color:#108ee9;color:#fff;text-align:center;border:0;border-radius:0}.cefc-button-radius{border-radius:5px}.cefc-button-bg-dark_blue{background-color:rgba(55,135,225,.1);color:#108ee9;border:.01rem solid #108ee9}.cefc-button-bg-blue,.cefc-button-clicked-blue{background-color:#108ee9;border:.01rem solid #108ee9;color:#fff}.cefc-button-bg-white{background-color:#fff;color:#108ee9;border:.01rem solid #108ee9}.cefc-button-btn-wrapper-block{width:100%;margin:15px 0;padding-left:15px;padding-right:15px}.cefc-button-group-vertical{display:flex;flex-direction:column}", ""]);
 
 // exports
 

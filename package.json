@@ -1,6 +1,6 @@
 {
   "name": "cefc-ui-button",
-  "version": "0.0.5",
+  "version": "0.0.51",
   "description": "CEFC-UI-BUTTON",
   "main": "build/index.js",
   "scripts": {

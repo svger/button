@@ -10,7 +10,7 @@ class App extends React.Component {
          <div>Button Demo</div>
 
          <div className="btn-single">
-           <Button radius >Radius</Button>
+           <Button radius  color="white">Radius</Button>
            <Button disabled >Disabled</Button>
            <Button radius width="100">Width 100</Button>
            <Button radius >
