@@ -23,7 +23,7 @@ class Button extends Component {
     onClick: PropTypes.func,                          //点击触发事件,
     maskColor: PropTypes.string,                      //button的遮罩层颜色,
     className: PropTypes.string,                      //外部传入的样式
-    style: PropTypes.string                           //外部传入的style
+    style: PropTypes.string,                          //外部传入的style
   }
 
   static defaultProps = {
@@ -31,14 +31,13 @@ class Button extends Component {
   }
 
   getBtnClass = () => {
-    const  { color, disabled, radius, block, clickedColor, prefix, fixed, full } = this.props;
+    const { color, disabled, radius, block, clickedColor, prefix, fixed } = this.props;
     let config = {
       [`${prefix}`]: true,
       [`${prefix}-default`]: true,
       [`${prefix}-radius`]: radius,
       [`${prefix}-disabled`]: disabled,
       [`${prefix}-block`]: block,
-      [`${prefix}-full`]: full,
     };
 
     if (color) {

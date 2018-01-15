@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../src/index';
+import Button from '../build/index';
 import Icon from 'cefc-ui-icon';
 
 class App extends React.Component {
